@@ -34,6 +34,26 @@
     --text-color: var(--text-light);
     --container-bg-color: var(--container-bg-dark);
     --border-color: rgba(255, 255, 255, 0.1);
+    --form-input-bg: rgba(0,0,0,0.3);
+    --form-input-color: var(--text-light);
+    --form-input-border: rgba(255,255,255,0.1);
+    --quiz-type-label-color: var(--text-light);
+    --quiz-type-label-border: var(--border-color);
+    --answer-btn-color: var(--text-light);
+    --answer-btn-border: var(--border-color);
+    --detail-item-bg: rgba(0,0,0,0.2);
+    --detail-item-border: var(--border-color);
+    --detail-item-h3-color: var(--text-light);
+    --detail-item-span-color: white;
+    --review-item-bg: rgba(0,0,0,0.2);
+    --review-item-border: var(--border-color);
+    --review-item-explanation-color: var(--text-light);
+    --modal-content-bg: var(--container-bg-dark);
+    --h1-h2-color: var(--text-primary-glow);
+    --h1-h2-text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(74, 144, 226, 0.5);
+    --final-score-color: white;
+    --final-score-text-shadow: 0 0 15px rgba(37, 117, 252, 0.8);
+    --lifeline-btn-color: #1a1a2e;
 }
 
 body.light-mode {
@@ -41,6 +61,26 @@ body.light-mode {
     --text-color: var(--text-dark);
     --container-bg-color: var(--container-bg-light);
     --border-color: rgba(0, 0, 0, 0.1);
+    --form-input-bg: #fff;
+    --form-input-color: var(--text-dark);
+    --form-input-border: #ccc;
+    --quiz-type-label-color: var(--text-dark);
+    --quiz-type-label-border: #ccc;
+    --answer-btn-color: var(--primary-gloss-start);
+    --answer-btn-border: var(--primary-gloss-start);
+    --detail-item-bg: #fff;
+    --detail-item-border: #eee;
+    --detail-item-h3-color: var(--text-dark);
+    --detail-item-span-color: var(--primary-gloss-start);
+    --review-item-bg: #fff;
+    --review-item-border: #eee;
+    --review-item-explanation-color: var(--text-dark);
+    --modal-content-bg: var(--container-bg-light);
+    --h1-h2-color: var(--primary-gloss-start);
+    --h1-h2-text-shadow: none;
+    --final-score-color: var(--primary-gloss-start);
+    --final-score-text-shadow: none;
+    --lifeline-btn-color: white;
 }
 
 /* --- Base & Global Styles --- */
@@ -130,7 +170,8 @@ body {
     width: 24px;
     height: 24px;
     stroke-width: 2;
-    color: var(--text-color);
+    stroke: var(--text-color);
+    fill: none;
 }
 
 
@@ -185,8 +226,8 @@ h1, h2 {
     font-family: var(--font-heading);
     font-weight: 700;
     text-align: center;
-    color: var(--text-primary-glow);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(74, 144, 226, 0.5);
+    color: var(--h1-h2-color);
+    text-shadow: var(--h1-h2-text-shadow);
 }
 
 h1 { font-size: 2.8rem; }
@@ -259,19 +300,19 @@ h2 { font-size: 2.2rem; }
     margin-bottom: 0.75rem;
     font-weight: 600;
     font-size: 1rem;
-    color: var(--text-light);
+    color: var(--text-color);
 }
 
 .form-group input,
 .form-group select {
     width: 100%;
     padding: 1rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--form-input-border);
     border-radius: 12px;
     font-size: 1rem;
     font-family: var(--font-body);
-    background-color: rgba(0,0,0,0.2);
-    color: var(--text-light);
+    background-color: var(--form-input-bg);
+    color: var(--form-input-color);
     transition: all 0.2s ease;
 }
 
@@ -294,10 +335,10 @@ h2 { font-size: 2.2rem; }
     cursor: pointer;
     padding: 0.75rem;
     border-radius: 12px;
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--quiz-type-label-border);
     transition: all 0.2s ease;
     font-weight: 600;
-    color: var(--text-light);
+    color: var(--quiz-type-label-color);
 }
 
 .quiz-type-selection label:hover {
@@ -352,7 +393,7 @@ h2 { font-size: 2.2rem; }
 
 .lifeline-btn {
     background-image: linear-gradient(to right, var(--secondary-gloss-start), var(--secondary-gloss-end));
-    color: #1a1a2e;
+    color: var(--lifeline-btn-color);
     border: none;
     border-radius: 10px;
     padding: 0.75rem 1.25rem;
@@ -401,8 +442,8 @@ h2 { font-size: 2.2rem; }
 
 #answer-buttons .btn {
     background: transparent;
-    color: var(--text-light);
-    border: 2px solid var(--border-color);
+    color: var(--answer-btn-color);
+    border: 2px solid var(--answer-btn-border);
     box-shadow: none;
     text-transform: none;
     font-weight: 600;
@@ -539,10 +580,10 @@ h2 { font-size: 2.2rem; }
     position: relative;
     font-size: 3.5rem;
     font-weight: 700;
-    color: white;
+    color: var(--final-score-color);
     animation: count-up 1s ease-out;
     z-index: 1;
-    text-shadow: 0 0 15px rgba(37, 117, 252, 0.8);
+    text-shadow: var(--final-score-text-shadow);
 }
 
 @keyframes count-up {
@@ -559,10 +600,10 @@ h2 { font-size: 2.2rem; }
 }
 
 .detail-item {
-    background: rgba(0,0,0,0.2);
+    background: var(--detail-item-bg);
     padding: 1.5rem;
     border-radius: var(--border-radius);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--detail-item-border);
     opacity: 0;
     transform: translateY(20px);
     animation: slide-fade-in 0.5s ease-out forwards;
@@ -583,7 +624,7 @@ h2 { font-size: 2.2rem; }
 .detail-item h3 {
     font-size: 1rem;
     font-weight: 600;
-    color: var(--text-light);
+    color: var(--detail-item-h3-color);
     margin-bottom: 0.5rem;
     opacity: 0.8;
 }
@@ -591,7 +632,7 @@ h2 { font-size: 2.2rem; }
 .detail-item span {
     font-size: 2rem;
     font-weight: 700;
-    color: white;
+    color: var(--detail-item-span-color);
     transition: transform 0.3s ease-in-out;
     display: inline-block; /* Needed for transform */
 }
@@ -605,10 +646,10 @@ h2 { font-size: 2.2rem; }
 }
 
 .review-item, .study-item {
-    background: rgba(0,0,0,0.2);
+    background: var(--review-item-bg);
     padding: 1.5rem;
     border-radius: var(--border-radius);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--review-item-border);
     margin-bottom: 1.5rem;
 }
 
@@ -629,7 +670,7 @@ h2 { font-size: 2.2rem; }
 
 .review-item .explanation {
     font-style: italic;
-    color: var(--text-light);
+    color: var(--review-item-explanation-color);
     opacity: 0.8;
 }
 
@@ -675,7 +716,7 @@ h2 { font-size: 2.2rem; }
 }
 
 .modal-content {
-    background: var(--container-bg-dark);
+    background: var(--modal-content-bg);
     padding: 2.5rem;
     border-radius: var(--border-radius);
     width: 90%;
@@ -846,59 +887,10 @@ footer {
 }
 .main-header .toggle-switch-container {
 }
-body.dark-mode .form-group input, body.dark-mode .form-group select {
-    background-color: rgba(0,0,0,0.3);
-    color: var(--text-light);
-    border-color: rgba(255,255,255,0.1);
-}
-body.light-mode .form-group input, body.light-mode .form-group select {
-    background-color: #fff;
-    color: var(--text-dark);
-    border-color: #ccc;
-}
-body.light-mode .quiz-type-selection label {
-    color: var(--text-dark);
-    border-color: #ccc;
-}
 body.light-mode .quiz-type-selection input[type="radio"]:checked + label {
     color: white;
 }
-body.light-mode #answer-buttons .btn {
-    color: var(--primary-gloss-start);
-    border-color: var(--primary-gloss-start);
-}
 body.light-mode #answer-buttons .btn:hover:not(:disabled) {
     background-color: var(--primary-gloss-start);
-    color: white;
-}
-body.light-mode .detail-item {
-    background-color: #fff;
-    border-color: #eee;
-}
-body.light-mode .detail-item h3 {
-    color: var(--text-dark);
-}
-body.light-mode .detail-item span {
-    color: var(--primary-gloss-start);
-}
-body.light-mode .review-item, body.light-mode .study-item {
-    background-color: #fff;
-    border-color: #eee;
-}
-body.light-mode .review-item .explanation {
-    color: var(--text-dark);
-}
-body.light-mode .modal-content {
-    background: var(--container-bg-light);
-}
-body.light-mode h1, body.light-mode h2 {
-    color: var(--primary-gloss-start);
-    text-shadow: none;
-}
-body.light-mode #final-score {
-    color: var(--primary-gloss-start);
-    text-shadow: none;
-}
-body.light-mode .lifeline-btn {
     color: white;
 }
