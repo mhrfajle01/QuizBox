@@ -80,7 +80,7 @@ body.light-mode {
     --h1-h2-text-shadow: none;
     --final-score-color: var(--primary-gloss-start);
     --final-score-text-shadow: none;
-    --lifeline-btn-color: white;
+    --lifeline-btn-color: var(--primary-gloss-start);
 }
 
 /* --- Base & Global Styles --- */
@@ -249,7 +249,7 @@ h2 { font-size: 2.2rem; }
     margin-top: 1rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), inset 0 -2px 5px rgba(0,0,0,0.3), inset 0 2px 5px rgba(255,255,255,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
 }
@@ -368,7 +368,7 @@ h2 { font-size: 2.2rem; }
 
 .progress-bar-container {
     width: 100%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: var(--border-color);
     border-radius: 10px;
     height: 12px;
     margin-bottom: 2rem;
@@ -425,7 +425,7 @@ h2 { font-size: 2.2rem; }
     text-align: center;
     min-height: 100px;
     line-height: 1.4;
-    color: var(--text-primary-glow);
+    color: var(--text-color);
 }
 
 #answer-buttons {
@@ -564,7 +564,7 @@ h2 { font-size: 2.2rem; }
 
 .score-circle .circle-bg {
     fill: none;
-    stroke: rgba(255, 255, 255, 0.1);
+    stroke: var(--border-color);
     stroke-width: 4.2;
 }
 
@@ -785,7 +785,7 @@ h2 { font-size: 2.2rem; }
 
 #quiz-main-title {
     font-size: 2.2rem;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(74, 144, 226, 0.7);
+    text-shadow: var(--h1-h2-text-shadow);
     margin: 0;
 }
 

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="icon-sun" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" fill="currentColor" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+  </symbol>
+  <symbol id="icon-moon" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" fill="currentColor" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+  </symbol>
+  <symbol id="icon-volume-up" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" fill="currentColor" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.647 11 4.1 11 5v14c0 .9-.077 1.353-.293 1.569l-4.707-4.707z"></path>
+  </symbol>
+  <symbol id="icon-volume-off" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" fill="currentColor" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.647 11 4.1 11 5v14c0 .9-.077 1.353-.293 1.569l-4.707-4.707zm0 0L9.414 9m3.536-3.536l-1.414 1.414M17.586 10.414l-1.414 1.414m-1.414 1.414l-1.414 1.414M12 12l-1.414 1.414"></path>
+  </symbol>
+</svg>
